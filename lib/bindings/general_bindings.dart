@@ -9,7 +9,7 @@ class GeneralBindings extends Bindings{
   @override
   void dependencies(){
     Get.put(NetworkManager());
-    Get.put(AuthController());      // ✅ Register AuthController
+    Get.put(AuthController());      //  Register AuthController
     Get.put(UserController());
     Get.lazyPut(() => ProductController(), fenix: true);
     Get.lazyPut(() => CategoryController(), fenix: true);
